@@ -1,0 +1,4 @@
+Taruh foto kenangan kalian di folder ini (maksimal 50), dengan nama:
+1.jpg, 2.jpg, 3.jpg ... 50.jpg
+Format .jpg .jpeg .png .webp diterima. Nomor yang tidak ada fotonya otomatis dilewati.
+Foto ditampilkan sesuai urutan nomor. Kecilkan dulu dengan tools/kompres_foto.py agar ringan di HP.

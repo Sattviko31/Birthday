@@ -116,10 +116,61 @@ section h2,.sub,.it p,.letter p{text-shadow:0 2px 14px #000}
 }
 @media(max-width:380px){.cards{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+#lock{position:fixed;inset:0;z-index:120;background:radial-gradient(circle at 50% 35%,#21190b,#050403);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;transition:1.4s}
+#lock.out{opacity:0;pointer-events:none;transform:scale(1.1)}
+#lock>div{max-width:440px;width:100%;display:flex;flex-direction:column;gap:16px;align-items:center}
+#lock .ic{font-size:3.6rem;animation:float 3s infinite;filter:drop-shadow(0 0 20px #d4af3788)}
+#lki{width:100%;padding:15px;background:#0008;border:1px solid var(--gold);color:var(--gold2);font:400 1rem Montserrat;text-align:center;outline:none}
+#lki:focus{box-shadow:0 0 25px #d4af3766}
+#lke{color:#ff8fa3;min-height:1.2em;font-size:.85rem}#lkh{color:var(--mut);font-size:.85rem;font-style:italic}
+#lock.shake>div{animation:shk .4s}@keyframes shk{25%{transform:translateX(-10px)}75%{transform:translateX(10px)}}
+.cd2{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.cd2 div{width:78px;padding:16px 4px;border:1px solid #d4af3755;background:#0009}.cd2 b{display:block;font:700 1.8rem 'Playfair Display';color:var(--gold2)}.cd2 span{font-size:.6rem;letter-spacing:.2em;color:var(--mut);text-transform:uppercase}
+.yrs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;text-align:left}
+.yr{border:1px solid #d4af3755;background:#16130ee6;padding:20px;transition:.5s;position:relative;overflow:hidden}
+.yr:hover{transform:translateY(-8px);border-color:var(--gold);box-shadow:0 12px 40px #d4af3733}
+.yr b{font:700 2.6rem 'Playfair Display';color:var(--gold);opacity:.9;display:block;line-height:1}
+.yr h3{color:var(--gold2);font-size:1.1rem;margin:8px 0}.yr p{color:var(--mut);line-height:1.7;font-size:.9rem}
+.yr img{width:100%;height:130px;object-fit:cover;margin-bottom:12px;border:1px solid #d4af3766;cursor:pointer}
+#quiz{max-width:640px;margin:auto;border:1px solid var(--gold);background:#16130eea;padding:34px 24px}
+#quiz small{color:var(--mut);letter-spacing:.2em;text-transform:uppercase;font-size:.7rem}#quiz h3{margin:14px 0 22px;font-size:1.4rem}
+.qo{display:grid;gap:10px}.qo button{padding:14px;background:transparent;border:1px solid #d4af3766;color:var(--tx);font:300 .95rem Montserrat;cursor:pointer;transition:.3s}
+.qo button:not(:disabled):hover{background:#d4af3722;border-color:var(--gold)}.qo .ok{background:#2e7d3255!important;border-color:#6fcf7a!important}.qo .no{background:#b0283555!important;border-color:#ff6f7f!important}
+.qf{margin-top:18px;color:var(--gold2);line-height:1.7;min-height:1.5em}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.cp{position:relative;height:130px;border:1px solid var(--gold);overflow:hidden;background:linear-gradient(145deg,#2a2210,#16130e)}
+.cpi{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;padding:14px;line-height:1.5;color:var(--gold2);font-weight:400}
+.cp canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair;transition:opacity .8s}
+.jn{max-width:680px;margin:auto;text-align:left;list-style:none;counter-reset:j}
+.jn li{counter-increment:j;padding:18px 18px 18px 74px;position:relative;border-bottom:1px solid #d4af3733;line-height:1.8;background:#0b0a08aa}
+.jn li:before{content:counter(j,upper-roman);position:absolute;left:12px;top:50%;transform:translateY(-50%);font:700 1.7rem 'Playfair Display';color:var(--gold);width:48px;text-align:center}
+#media{max-width:720px;margin:34px auto 0;display:grid;gap:22px}
+.md{border:1px solid var(--gold);background:#16130eee;padding:22px}.md h3{color:var(--gold2);margin-bottom:14px}.md audio,.md video{width:100%;max-height:420px;background:#000}
+#fwb{margin-top:26px}
+@media(max-width:700px){#quiz{padding:24px 16px}.jn li{padding:14px 12px 14px 58px;font-size:.92rem}.jn li:before{left:4px;font-size:1.3rem;width:40px}.cd2 div{width:66px}.cd2 b{font-size:1.5rem}}
+
+.gal figure{break-inside:avoid;margin-bottom:16px;position:relative;overflow:hidden}.gal figure.hid{display:none}
+.gal figure img{margin:0;opacity:0;min-height:90px;background:#16130e}.gal figure img.ld{opacity:1}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;font-size:.78rem;line-height:1.5;text-align:left;background:linear-gradient(transparent,#000d);transform:translateY(100%);transition:.4s;pointer-events:none}
+.gal figure:hover figcaption{transform:none}
+#lb:after{display:none}
+#lb button{position:absolute;background:#0009;border:1px solid var(--gold);color:var(--gold2);cursor:pointer;z-index:2}
+#lbx{top:14px;right:16px;width:46px;height:46px;font-size:1.8rem;line-height:1}
+.nv{top:50%;transform:translateY(-50%);width:46px;height:64px;font-size:2rem}#lbp{left:10px}#lbn{right:10px}
+#lb.one .nv{display:none}#lb img{cursor:default}
+#lbc{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:var(--gold2);font-size:.85rem;letter-spacing:.08em;padding:0 60px}
+@media(max-width:700px){.gal figure{margin-bottom:10px}.nv{width:38px;height:54px}.gal figcaption{transform:none;font-size:.7rem;padding:18px 8px 6px}}
 </style>
 </head>
 <body>
 <canvas id="bg"></canvas>
+<div id="lock">
+ <div id="lk1"><div class="ic">🔒</div><div class="script gold" id="lkt" style="font-size:2.4rem"></div>
+  <p id="lkq" style="line-height:1.8"></p><input id="lki" placeholder="Ketik jawabanmu…" autocomplete="off"><div id="lkh"></div><div id="lke"></div>
+  <button class="btn" id="lkb">Buka</button></div>
+ <div id="lk2" style="display:none"><div class="ic">⏳</div><div class="script gold" style="font-size:2.4rem">Sedikit lagi, Sayang…</div>
+  <p style="color:var(--mut);line-height:1.8">Hadiahmu akan terbuka tepat di hari ulang tahunmu.</p><div class="cd2" id="cd2"></div></div>
+</div>
 
 <div id="gate">
   <div class="gift">🎁</div>
@@ -129,7 +180,7 @@ section h2,.sub,.it p,.letter p{text-shadow:0 2px 14px #000}
 </div>
 
 <button id="mus" title="Musik">♪</button>
-<div id="lb"><img alt=""></div>
+<div id="lb"><button id="lbx" aria-label="Tutup">×</button><button id="lbp" class="nv" aria-label="Sebelumnya">‹</button><img alt=""><button id="lbn" class="nv" aria-label="Berikutnya">›</button><div id="lbc"></div></div>
 
 <section id="hero">
   <div class="pic"></div>
@@ -146,6 +197,13 @@ section h2,.sub,.it p,.letter p{text-shadow:0 2px 14px #000}
   <div class="cnt" id="cnt"></div>
 </section>
 
+<section style="--bgi:url(photos/2.jpg)">
+  <span class="orn"></span>
+  <h2 class="gold rv">Sembilan Tahun, Sepuluh Bab</h2>
+  <div class="sub rv">2017 — 2026</div>
+  <div class="yrs rv" id="yrs"></div>
+</section>
+
 <section style="--bgi:url(photos/9.jpg)">
   <span class="orn"></span>
   <h2 class="gold rv">Kisah Kita Sejak SMP</h2>
@@ -156,8 +214,9 @@ section h2,.sub,.it p,.letter p{text-shadow:0 2px 14px #000}
 <section style="--bgi:url(photos/3.jpg)">
   <span class="orn"></span>
   <h2 class="gold rv">Galeri Kenangan</h2>
-  <div class="sub rv">Ketuk foto untuk memperbesar</div>
+  <div class="sub rv">Ketuk foto untuk memperbesar, geser untuk foto berikutnya</div>
   <div class="gal rv" id="gal"></div>
+  <button class="btn" id="galmore" style="margin-top:34px;display:none">Lihat Lebih Banyak</button>
 </section>
 
 <section style="--bgi:url(photos/1.jpg)">
@@ -167,12 +226,34 @@ section h2,.sub,.it p,.letter p{text-shadow:0 2px 14px #000}
   <div class="cards rv" id="cards"></div>
 </section>
 
+<section style="--bgi:url(photos/4.jpg)">
+  <span class="orn"></span>
+  <h2 class="gold rv">Seberapa Kenal Kamu Denganku?</h2>
+  <div class="sub rv">Kuis kecil untuk kita berdua</div>
+  <div class="rv" id="quiz"></div>
+</section>
+
+<section style="--bgi:url(photos/7.jpg)">
+  <span class="orn"></span>
+  <h2 class="gold rv">Kupon Cinta</h2>
+  <div class="sub rv">Gosok kuponnya dengan jarimu</div>
+  <div class="kp rv" id="kupon"></div>
+</section>
+
+<section style="--bgi:url(photos/3.jpg)">
+  <span class="orn"></span>
+  <h2 class="gold rv">Janji-Janjiku</h2>
+  <div class="sub rv">Untukmu, dari hatiku</div>
+  <ol class="jn rv" id="jn"></ol>
+</section>
+
 <section style="--bgi:url(photos/6.jpg)">
   <span class="orn"></span>
   <h2 class="gold rv">Surat Untukmu</h2>
   <div class="sub rv">Ketuk amplop</div>
   <div class="env rv" id="env">💌</div>
   <div class="letter" id="letter"></div>
+  <div id="media"></div>
 </section>
 
 <section style="--bgi:url(photos/8.jpg)">
@@ -183,45 +264,15 @@ section h2,.sub,.it p,.letter p{text-shadow:0 2px 14px #000}
     <div class="cake"><div class="cn" id="cn"></div><div class="l2"></div><div class="l1"></div><div class="pl"></div></div>
     <p id="hint" style="color:var(--mut)">Ketuk setiap lilin untuk memadamkannya 🕯️</p>
     <div id="fin" class="script gold"></div>
+    <button class="btn" id="fwb">✨ Nyalakan Kembang Api ✨</button>
   </div>
 </section>
 
 <footer><span class="script gold" style="font-size:2rem">Selamanya milikmu</span><br><br><small id="sg"></small></footer>
 
+<script src="config.js"></script>
 <script>
-/* ====== EDIT BAGIAN INI ====== */
-const CFG={
-  pasangan:"Wahidha",
-  panjang:"Wahidha Khoizullisa",
-  dari:"Sattviko Wahyu Ramdhani",
-  mulai:"2017-10-17",
-  umur:"23",
-  intro:"Dari bangku SMP sampai hari ini, kamu selalu ada. Selamat ulang tahun yang ke-23, Wahidha, cintaku.",
-  cerita:[
-    {f:6,j:"17 Oktober 2017",t:"Semuanya dimulai saat kita masih SMP. Dari anak sekolah yang malu-malu, aku tidak pernah menyangka kamu akan jadi orang paling berarti dalam hidupku."},
-    {f:7,j:"Tumbuh Bersama",t:"Kita melewati seragam sekolah, ujian, dan mimpi-mimpi yang dulu terasa begitu jauh. Kamu selalu ada di setiap langkahnya."},
-    {f:3,j:"Hari Kelulusanku",t:"Kamu berdiri di sampingku di hari kelulusan, setia menemani dari awal sampai akhir perjuangan kuliahku. Terima kasih, Wahidha."},
-    {f:9,j:"Petualangan Kita",t:"Dari tempat-tempat baru sampai tawa-tawa kecil yang tak terduga, bersamamu semuanya jadi kenangan yang hangat."},
-    {f:8,j:"Selamanya?",t:"Sembilan tahun berlalu, dan aku masih memilihmu. Semoga kita selalu bersama, selamanya."}
-  ],
-  alasan:[
-    ["Baik Hatimu","Kebaikanmu tulus dan tidak pernah dibuat-buat. Itu yang membuatku jatuh cinta setiap hari."],
-    ["Cantikmu","Bukan hanya wajahmu, tapi caramu memperlakukan orang lain membuatmu cantik sepenuhnya."],
-    ["Manismu","Senyum dan tingkahmu yang manis selalu bisa menenangkan hari-hariku."],
-    ["Penurutmu","Kamu mau mendengarkan dan mengerti. Terima kasih sudah selalu menghargaiku."],
-    ["Ramahmu","Kamu hangat kepada siapa saja. Aku bangga memilikimu di sisiku."],
-    ["Setiamu","Kamu menemaniku sejak SMP sampai aku lulus kuliah. Kesetiaanmu adalah hadiah terbesarku."],
-    ["Sabarmu","Sembilan tahun bukan waktu singkat, dan kamu bertahan dengan sabar dan cinta."],
-    ["Kamu, Apa Adanya","Masih banyak lagi alasan yang tidak cukup kutulis di sini. Intinya, aku mencintaimu."]
-  ],
-  surat:[
-    "Selamat ulang tahun yang ke-23, Wahidha Khoizullisa, perempuan terbaik dalam hidupku.",
-    "Sejak 17 Oktober 2017 kita sudah berjalan bersama, dari seragam SMP sampai hari aku lulus kuliah. Kamu selalu setia menemaniku, di saat aku semangat maupun di saat aku lelah. Aku tidak akan pernah lupa itu.",
-    "Kamu baik, cantik, manis, penurut, ramah, dan masih banyak lagi hal indah dalam dirimu yang tidak bisa kutulis semuanya. Terima kasih sudah menjadi rumah untukku.",
-    "Semoga di usia yang baru ini, Allah mudahkan setiap langkahmu, kabulkan setiap doamu, dan semoga kita selalu bersama selamanya. Aku mencintaimu."
-  ]
-};
-/* ============================= */
+
 const $=s=>document.querySelector(s);
 $('#hn').textContent=CFG.pasangan;
 $('#sg').textContent="Dibuat dengan cinta oleh "+CFG.dari+" ♥";
@@ -229,16 +280,33 @@ if(CFG.umur)$('#h0').textContent="Happy "+CFG.umur+"th Birthday";
 
 // timeline, gallery, cards, letter
 $('#tl').innerHTML=CFG.cerita.map(c=>`<div class="it rv"><img src="photos/${c.f}.jpg" alt="${c.j}" loading="lazy"><div><h3>${c.j}</h3><p>${c.t}</p></div></div>`).join('');
-$('#gal').innerHTML=[1,2,3,4,5,6,7,8,9].map(n=>`<img src="photos/${n}.jpg" alt="Kenangan ${n}" loading="lazy">`).join('');
 $('#cards').innerHTML=CFG.alasan.map((a,i)=>`<div class="fc"><div><i><span style="font-size:1.8rem">${'♥✦❀✧♡✿❖♥'[i]}</span>${a[0]}</i><em>${a[1]}</em></div></div>`).join('');
 $('#letter').innerHTML=`<div class="script">Untuk ${CFG.panjang},</div>`+CFG.surat.map(p=>`<p style="margin-bottom:14px">${p}</p>`).join('')+`<div class="script" style="text-align:right">— ${CFG.dari} ♥</div>`;
 document.querySelectorAll('.fc').forEach(c=>c.onclick=()=>{c.classList.toggle('f');burst(c.getBoundingClientRect().left+60,c.getBoundingClientRect().top+60,10)});
 $('#env').onclick=()=>{$('#letter').classList.toggle('on');heartsAt(innerWidth/2,innerHeight/2,12)};
 
-// lightbox
-const lb=$('#lb');
-document.addEventListener('click',e=>{if(e.target.matches('.gal img,.it img')){lb.querySelector('img').src=e.target.src;lb.classList.add('on')}else if(lb.contains(e.target)||e.target===lb)lb.classList.remove('on')});
-
+// lightbox (galeri: geser/panah untuk berpindah)
+const lb=$('#lb'),lbi=lb.querySelector('img');let LI=[],LX=0,TX=0;
+function lbShow(){const m=LI[LX];lbi.src=m.src;$('#lbc').textContent=[m.dataset.cap||'',LI.length>1?(LX+1)+' / '+LI.length:''].filter(Boolean).join('  ·  ');lb.classList.toggle('one',LI.length<2)}
+function lbOpen(l,i){LI=l;LX=i;lbShow();lb.classList.add('on')}
+function lbGo(d){if(LI.length>1){LX=(LX+d+LI.length)%LI.length;lbShow()}}
+document.addEventListener('click',e=>{const t=e.target;
+ if(t.matches('#gal img')){const l=[...document.querySelectorAll('#gal figure:not(.hid) img.ld')];lbOpen(l,l.indexOf(t))}
+ else if(t.matches('.it img,.yr img'))lbOpen([t],0);
+ else if(t===lb||t.id==='lbx')lb.classList.remove('on');
+ else if(t.id==='lbp')lbGo(-1);else if(t.id==='lbn')lbGo(1)});
+lb.addEventListener('touchstart',e=>{TX=e.changedTouches[0].clientX},{passive:true});
+lb.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-TX;if(Math.abs(d)>50)lbGo(d<0?1:-1)});
+addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='ArrowRight')lbGo(1);if(e.key==='ArrowLeft')lbGo(-1)});
+// galeri otomatis (photos/galeri/1..N)
+(function(){const G=CFG.galeri||{},EX=['jpg','jpeg','png','webp','JPG','JPEG','PNG','WEBP'],box=$('#gal'),btn=$('#galmore'),STEP=G.tampil||12;let T=STEP;
+ const items=(G.utama||[]).map(n=>({b:'photos/'+n,c:''}));
+ for(let n=1;n<=(G.jumlah||50);n++)items.push({b:'photos/galeri/'+n,c:(G.keterangan||{})[n]||''});
+ function fill(){let v=box.querySelectorAll('figure:not(.hid)').length;while(v<T){const h=box.querySelector('figure.hid');if(!h)break;h.classList.remove('hid');h._go();v++}btn.style.display=box.querySelector('figure.hid')?'':'none'}
+ items.forEach(it=>{const f=document.createElement('figure'),im=new Image();let k=0;f.className='hid';im.alt='Kenangan kita';im.loading='lazy';im.dataset.cap=it.c;
+  im.onload=()=>im.classList.add('ld');im.onerror=()=>{k++;if(k<EX.length)im.src=it.b+'.'+EX[k];else{f.remove();fill()}};
+  f._go=()=>{im.src=it.b+'.'+EX[0]};f.appendChild(im);if(it.c){const c=document.createElement('figcaption');c.textContent=it.c;f.appendChild(c)}box.appendChild(f)});
+ btn.onclick=()=>{T+=STEP;fill()};fill()})();
 addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
 // reveal
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
@@ -270,7 +338,7 @@ function burst(x=innerWidth/2,y=innerHeight/2,n=140){cf.width=innerWidth;cf.heig
 
 // candles
 const N=5;$('#cn').innerHTML='<div class="c"></div>'.repeat(N);
-document.querySelectorAll('.c').forEach(c=>c.onclick=()=>{c.classList.add('off');if(!document.querySelector('.c:not(.off)')){burst();setTimeout(()=>burst(innerWidth*.25,innerHeight*.4,90),400);setTimeout(()=>burst(innerWidth*.75,innerHeight*.4,90),800);
+document.querySelectorAll('.c').forEach(c=>c.onclick=()=>{c.classList.add('off');if(!document.querySelector('.c:not(.off)')){fwShow(6);burst();setTimeout(()=>burst(innerWidth*.25,innerHeight*.4,90),400);setTimeout(()=>burst(innerWidth*.75,innerHeight*.4,90),800);
  $('#hint').textContent='Semoga semua harapanmu terkabul ✨';type('Selamat Ulang Tahun, '+CFG.pasangan+' ♥',$('#fin'),80)}});
 
 // ===== MUSIK: pakai music.mp3 bila ada, jika tidak pakai melodi sintetis =====
@@ -292,6 +360,61 @@ function stop(){playing=false;$('#mus').classList.remove('on');if(aud)aud.pause(
 $('#mus').onclick=()=>{if(playing)stop();else{if(mode==='synth'){playing=true;$('#mus').classList.add('on');ac.resume();synth()}else if(mode==='file'){playing=true;$('#mus').classList.add('on');aud.play()}else play()}};
 
 $('#openBtn').onclick=()=>{$('#gate').classList.add('open');play();burst();setTimeout(()=>type(CFG.intro,$('#type'),38),1200)};
+// ===== KEMBANG API =====
+const fc=document.createElement('canvas');fc.style.cssText='position:fixed;inset:0;z-index:125;pointer-events:none';document.body.appendChild(fc);const fz=fc.getContext('2d');let FW=[];
+function fit(){fc.width=innerWidth;fc.height=innerHeight}fit();addEventListener('resize',fit);
+function shot(x,y){const h=Math.random()*360;for(let i=0;i<70;i++){const a=i/70*6.283,s=2+Math.random()*4.5;FW.push({x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,l:90+Math.random()*30,c:`hsl(${h+Math.random()*40},100%,${60+Math.random()*20}%)`})}}
+(function fl(){fz.globalCompositeOperation='destination-out';fz.fillStyle='rgba(0,0,0,.2)';fz.fillRect(0,0,fc.width,fc.height);fz.globalCompositeOperation='lighter';FW=FW.filter(p=>p.l-->0);FW.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.vy+=.045;p.vx*=.985;p.vy*=.985;fz.fillStyle=p.c;fz.globalAlpha=Math.min(1,p.l/40);fz.beginPath();fz.arc(p.x,p.y,2,0,7);fz.fill()});fz.globalAlpha=1;requestAnimationFrame(fl)})();
+function fwShow(n=10){for(let i=0;i<n;i++)setTimeout(()=>shot(innerWidth*(.15+Math.random()*.7),innerHeight*(.15+Math.random()*.4)),i*550)}
+$('#fwb').onclick=()=>{fwShow(14);burst()};
+
+// ===== KUNCI RAHASIA + HITUNG MUNDUR =====
+(function(){
+ const K=CFG.kunci,L=$('#lock'),PREV=/preview/.test(location.search),nm=t=>String(t).toLowerCase().replace(/[^a-z0-9]/g,'');
+ if(!K||!K.aktif&&!(new Date(CFG.ultah)>new Date()&&!PREV)){L.remove();return}
+ const unlock=()=>{L.classList.add('out');setTimeout(()=>L.remove(),1500);fwShow(5)};
+ const countdown=()=>{$('#lk1').style.display='none';$('#lk2').style.display='';
+  const t=setInterval(()=>{let d=new Date(CFG.ultah)-new Date();if(d<=0){clearInterval(t);unlock();return}
+   const s=Math.floor(d/1e3);$('#cd2').innerHTML=[[Math.floor(s/86400),'Hari'],[Math.floor(s%86400/3600),'Jam'],[Math.floor(s%3600/60),'Menit'],[s%60,'Detik']].map(x=>`<div><b>${x[0]}</b><span>${x[1]}</span></div>`).join('')},1000)};
+ const next=()=>{if(new Date(CFG.ultah)>new Date()&&!PREV)countdown();else unlock()};
+ if(!K.aktif){$('#lk1').style.display='none';countdown();return}
+ $('#lkt').textContent='Hanya untuk '+CFG.panjang;$('#lkq').textContent=K.tanya;$('#lkh').textContent=K.petunjuk?'Petunjuk: '+K.petunjuk:'';
+ const go=()=>{if(K.jawab.some(j=>nm(j)===nm($('#lki').value))){heartsAt(innerWidth/2,innerHeight/2,10);next()}else{$('#lke').textContent='Hmm, belum tepat. Coba ingat lagi ya ♥';L.classList.add('shake');setTimeout(()=>L.classList.remove('shake'),450)}};
+ $('#lkb').onclick=go;$('#lki').addEventListener('keydown',e=>{if(e.key==='Enter')go()});
+})();
+
+// ===== LINIMASA TAHUNAN =====
+$('#yrs').innerHTML=CFG.tahun.map(y=>`<div class="yr">${y.f?`<img src="photos/${y.f}.jpg" alt="${y.y}" loading="lazy">`:''}<b>${y.y}</b><h3>${y.j}</h3><p>${y.t}</p></div>`).join('');
+
+// ===== JANJI =====
+$('#jn').innerHTML=CFG.janji.map(j=>`<li>${j}</li>`).join('');
+
+// ===== KUIS =====
+(function(){let i=0,sc=0;const B=$('#quiz'),n=CFG.kuis.length;
+ function r(){const q=CFG.kuis[i];
+  if(!q){const p=sc/n;B.innerHTML=`<h3 class="gold">Skor: ${sc} / ${n}</h3><p style="margin:14px 0 22px;line-height:1.8">${p==1?'Sempurna! Kamu memang paling mengenalku ♥':p>=.5?'Hebat! Kamu hampir tahu semuanya tentang kita ♥':'Tidak apa-apa, kita masih punya banyak waktu untuk saling mengenal ♥'}</p><button class="btn" id="qr">Main Lagi</button>`;if(p>=.5)burst();$('#qr').onclick=()=>{i=0;sc=0;r()};return}
+  B.innerHTML=`<small>Pertanyaan ${i+1} / ${n}</small><h3>${q.q}</h3><div class="qo">${q.o.map((o,k)=>`<button data-k="${k}">${o}</button>`).join('')}</div><p class="qf"></p>`;
+  B.querySelectorAll('.qo button').forEach(b=>b.onclick=()=>{const ok=+b.dataset.k===q.a;if(ok)sc++;
+   B.querySelectorAll('.qo button').forEach((x,j)=>{x.disabled=true;if(j===q.a)x.classList.add('ok');else if(x===b)x.classList.add('no')});
+   B.querySelector('.qf').innerHTML=(ok?q.ok:q.no)+'<br><button class="btn" id="qn" style="margin-top:16px">'+(i==n-1?'Lihat Skor':'Lanjut →')+'</button>';
+   if(ok)heartsAt(innerWidth/2,innerHeight/2,8);$('#qn').onclick=()=>{i++;r()}})}
+ r()})();
+
+// ===== KUPON GOSOK =====
+$('#kupon').innerHTML=CFG.kupon.map(k=>`<div class="cp"><div class="cpi"><span style="font-size:1.6rem">🎟️</span>${k}</div><canvas></canvas></div>`).join('');
+document.querySelectorAll('.cp').forEach(cp=>{const c=cp.querySelector('canvas'),x=c.getContext('2d');let w=c.width=cp.offsetWidth||280,h=c.height=cp.offsetHeight||130,dn=0,dr=0;
+ const g=x.createLinearGradient(0,0,w,h);g.addColorStop(0,'#8a6a12');g.addColorStop(.5,'#f6e27a');g.addColorStop(1,'#a67c00');x.fillStyle=g;x.fillRect(0,0,w,h);
+ x.fillStyle='#3a2c06';x.font='600 14px Montserrat,sans-serif';x.textAlign='center';x.fillText('✦ GOSOK DI SINI ✦',w/2,h/2+5);
+ const sc=e=>{const r=c.getBoundingClientRect();x.globalCompositeOperation='destination-out';x.beginPath();x.arc((e.clientX-r.left)*w/r.width,(e.clientY-r.top)*h/r.height,20,0,7);x.fill()};
+ const chk=()=>{if(dn)return;const d=x.getImageData(0,0,w,h).data;let t=0,n=0;for(let p=3;p<d.length;p+=64){n++;if(d[p]<40)t++}
+  if(t/n>.45){dn=1;c.style.opacity=0;setTimeout(()=>c.remove(),800);const r=cp.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,60);heartsAt(r.left+r.width/2,r.top+r.height/2,6)}};
+ c.onpointerdown=e=>{dr=1;c.setPointerCapture(e.pointerId);sc(e)};c.onpointermove=e=>{if(dr)sc(e)};c.onpointerup=c.onpointercancel=()=>{dr=0;chk()}});
+
+// ===== PESAN SUARA / VIDEO =====
+(function(){const m=CFG.media||{};let h='';
+ if(m.suara)h+=`<div class="md"><h3>${m.judulSuara||'Pesan Suara Untukmu'}</h3><audio controls preload="none" src="${m.suara}"></audio></div>`;
+ if(m.video)h+=`<div class="md"><h3>${m.judulVideo||'Video Untukmu'}</h3><video controls playsinline preload="metadata" ${m.poster?`poster="${m.poster}"`:''} src="${m.video}"></video></div>`;
+ const M=$('#media');M.innerHTML=h;M.querySelectorAll('audio,video').forEach(e=>e.addEventListener('play',()=>{if(playing)stop()}))})();
 </script>
 </body>
 </html>
