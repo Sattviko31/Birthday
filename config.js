@@ -10,22 +10,22 @@ const CFG={
   mulai:"2017-10-17",                 // tanggal jadian (TAHUN-BULAN-TANGGAL)
   umur:"23",                          // umur baru; kosongkan "" jika tak ingin
   ultah:"2026-11-17T00:00:00",        // hadiah terbuka mulai waktu ini (jam perangkat)
-  intro:"Dari bangku SMP sampai hari ini, kamu selalu ada. Selamat ulang tahun yang ke-23, Wahidha, cintaku.",
+  intro:"Dari dulu sampai hari ini, kamu selalu ada. Selamat ulang tahun yang ke-23, Wahidha, cintaku.",
 
   /* 1. KUNCI RAHASIA — pertanyaan yang hanya kalian berdua tahu */
   kunci:{
     aktif:true,                       // false = tanpa kunci
     tanya:"Tanggal berapa aku mulai mendekatimu? (tanggal-bulan-tahun)",
-    jawab:["17 Oktober 2017","17-10-2017","17/10/2017","17 10 2017","171003"],  // semua jawaban yang diterima
-    petunjuk:"Kita masih memakai seragam DP saat itu ♥"
+    jawab:["17 Oktober 2017","17-10-2017","17/10/2017","17 10 2017","171017"],  // semua jawaban yang diterima
+    petunjuk:"Kita masih memakai seragam Dewan Penggalang saat itu ♥"
   },
 
   /* 5. LINIMASA PER TAHUN 2017–2026 (f boleh dikosongkan: f:0) */
   tahun:[
-    {y:2017,j:"Awal Cerita",t:"17 Oktober 2017, kita resmi bersama saat masih SMP. Sederhana, malu-malu, tapi tulus.",f:6},
-    {y:2018,j:"Belajar Saling Mengerti",t:"Tahun-tahun seragam sekolah, cerita receh, dan mulai saling mengenal lebih dalam.",f:0},
-    {y:2019,j:"Tumbuh Bersama",t:"Kita beranjak remaja, dan kamu tetap jadi orang yang paling kuinginkan di dekatku.",f:0},
-    {y:2020,j:"Tetap Saling Menjaga",t:"Masa yang tak mudah bagi semua orang, tapi kita tetap saling menguatkan.",f:0},
+    {y:2017,j:"Awal Cerita",t:"17 Oktober 2017, waktu kita sekelas dan satu organisasi aku mlai melirikmu dan mencoba mendekat",f:6},
+    {y:2018,j:"Kamu Mulai Respon",t:"Pada tahun ini kamu sudah mulai meresponku dan menjawab semua pesan-pesanku,ini adalah langkah awalku mendekatimu.",f:0},
+    {y:2019,j:"Masa Terakhir Bersekolah Bersama",t:"Ini adalah tahun dimana kita mulai akan berpisah,dimasa ini juga kita juga ragu mau lanjut atau tidak.",f:0},
+    {y:2020,j:"Di Lingkungan Baru Masing-Masing",t:"Pada masa ini kita mulai menjalani pendidikan yang terpisah dan kita sudah mulai jarang bertemu.",f:0},
     {y:2021,j:"Masa SMA",t:"Ganti seragam, ganti mimpi, tapi hatiku tidak pernah ganti tujuan.",f:0},
     {y:2022,j:"Semakin Dewasa",t:"Kita belajar bahwa cinta juga soal sabar, percaya, dan bertahan.",f:0},
     {y:2023,j:"Awal Perkuliahan",t:"Aku mulai kuliah di PENS. Jarak dan kesibukan datang, kamu tetap setia menemani.",f:7},
