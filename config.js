@@ -27,8 +27,8 @@ const CFG={
     {y:2019,j:"Masa Terakhir Bersekolah Bersama",t:"Ini adalah tahun dimana kita mulai akan berpisah,dimasa ini juga kita juga ragu mau lanjut atau tidak.",f:0},
     {y:2020,j:"Di Lingkungan Baru Masing-Masing",t:"Pada masa ini kita mulai menjalani pendidikan yang terpisah dan kita sudah mulai jarang bertemu.",f:0},
     {y:2021,j:"Masa SMA",t:"Ganti seragam, ganti mimpi, tapi hatiku tidak pernah ganti tujuan.",f:0},
-    {y:2022,j:"Semakin Dewasa",t:"Kita belajar bahwa cinta juga soal sabar, percaya, dan bertahan.",f:0},
-    {y:2023,j:"Awal Perkuliahan",t:"Aku mulai kuliah di PENS. Jarak dan kesibukan datang, kamu tetap setia menemani.",f:7},
+    {y:2022,j:"Kelulusan dan Pekerjaan",t:"Setelah kita lulus,jarak semakin jauh hati kita mulai runtuh.",f:0},
+    {y:2023,j:"Tahun Terberat Bagi Kita",t:"Pada tahun ini kita di dalam momen-momen krusial, tapi hatiku tetap memilih kamu",f:7},
     {y:2024,j:"Perjuangan",t:"Tugas, praktikum, dan lelah. Doa dan semangatmu jadi tenagaku.",f:0},
     {y:2025,j:"Hampir di Garis Akhir",t:"Menuju kelulusan, kamu selalu percaya aku bisa, bahkan saat aku ragu.",f:0},
     {y:2026,j:"Sembilan Tahun",t:"Aku lulus, dan kamu berdiri di sampingku. Terima kasih sudah setia sampai hari ini.",f:3}
@@ -67,7 +67,7 @@ const CFG={
 
   /* 3. KUIS — a = nomor jawaban benar (0 = pilihan pertama) */
   kuis:[
-    {q:"Sejak kapan kita resmi bersama?",o:["17 Oktober 2017","17 Oktober 2016","7 Oktober 2017","1 November 2017"],a:0,ok:"Betul! Tanggal itu tidak akan pernah kulupa ♥",no:"Hampir! Tanggalnya 17 Oktober 2017 ♥"},
+    {q:"Sejak kapan aku mulai menyukaimu?",o:["17 Oktober 2017","17 Oktober 2016","7 Oktober 2017","1 November 2017"],a:0,ok:"Betul! Tanggal itu tidak akan pernah kulupa ♥",no:"Hampir! Tanggalnya 17 Oktober 2017 ♥"},
     {q:"Kita mulai bersama saat masih duduk di bangku…",o:["SD","SMP","SMA","Kuliah"],a:1,ok:"Betul, anak SMP yang malu-malu ♥",no:"Bukan itu, kita mulai sejak SMP ♥"},
     {q:"Di kota mana Wahidha lahir?",o:["Madiun","Ngawi","Magetan","Ponorogo"],a:2,ok:"Magetan, kota kelahiran perempuan terbaikku ♥",no:"Kota kelahiranmu Magetan ♥"},
     {q:"Kapan ulang tahun Wahidha?",o:["23 November","23 Oktober","3 November","13 November"],a:0,ok:"Tepat! Tanggal paling istimewa di tahun ini ♥",no:"Ulang tahunmu 23 November ♥"},
@@ -78,9 +78,8 @@ const CFG={
   kupon:[
     "1x Traktir makan di tempat favoritmu",
     "1x Pelukan lama tanpa batas waktu",
-    "1x Kamu yang pilih film atau tempat jalan",
-    "1x Aku dengarkan ceritamu tanpa menyela",
-    "1x Permintaan apa saja (selagi aku mampu) ♥"
+    "1x Kamu yang pilih tempat jalan",
+    "1x Aku dengarkan ceritamu tanpa menyela"
   ],
 
   /* 6. JANJI-JANJIKU */
